@@ -56,7 +56,7 @@ int Operation(int a)
         "sub %%eax, 1;"
         "sub %%eax, 1;"
         "imul %%eax, 2;" 
-	"imul %%eax, 2;
+	"imul %%eax, 2;"
 	"imul %%eax, 2;"
         "add %%eax, 1;" 
 	"add %%eax, 1;"
@@ -73,7 +73,7 @@ int Operation(int a)
 	"add %%eax, 1;"
         "add %%eax, 1;"
         "add %%eax, 1;" 
-        "div %%dl;
+        "div %%dl;"
         "div %%dl;"
         "sub %%eax, 1;" 
 	"sub %%eax, 1;"
