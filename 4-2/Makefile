@@ -8,4 +8,4 @@ dynamic :
 	$(CC) -Ddynamic -o drecompile D_recompile.c
 
 clean :
-	rm -rf $(EXEC)
+	rm -rf $(EXEC) drecompile

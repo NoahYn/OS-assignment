@@ -1,0 +1,1145 @@
+
+D_recompile_test.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <Operation>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	89 7d fc             	mov    %edi,-0x4(%rbp)
+   7:	8b 55 fc             	mov    -0x4(%rbp),%edx
+   a:	89 d0                	mov    %edx,%eax
+   c:	b2 02                	mov    $0x2,%dl
+   e:	83 c0 01             	add    $0x1,%eax
+  11:	83 c0 01             	add    $0x1,%eax
+  14:	83 c0 01             	add    $0x1,%eax
+  17:	83 c0 01             	add    $0x1,%eax
+  1a:	83 c0 02             	add    $0x2,%eax
+  1d:	83 c0 03             	add    $0x3,%eax
+  20:	83 c0 01             	add    $0x1,%eax
+  23:	83 c0 02             	add    $0x2,%eax
+  26:	83 c0 01             	add    $0x1,%eax
+  29:	83 c0 01             	add    $0x1,%eax
+  2c:	6b c0 02             	imul   $0x2,%eax,%eax
+  2f:	6b c0 02             	imul   $0x2,%eax,%eax
+  32:	6b c0 02             	imul   $0x2,%eax,%eax
+  35:	83 c0 01             	add    $0x1,%eax
+  38:	83 c0 01             	add    $0x1,%eax
+  3b:	83 c0 03             	add    $0x3,%eax
+  3e:	83 c0 01             	add    $0x1,%eax
+  41:	83 c0 01             	add    $0x1,%eax
+  44:	83 c0 01             	add    $0x1,%eax
+  47:	83 c0 03             	add    $0x3,%eax
+  4a:	83 c0 01             	add    $0x1,%eax
+  4d:	83 c0 01             	add    $0x1,%eax
+  50:	83 c0 02             	add    $0x2,%eax
+  53:	83 c0 01             	add    $0x1,%eax
+  56:	83 c0 01             	add    $0x1,%eax
+  59:	83 c0 01             	add    $0x1,%eax
+  5c:	83 c0 01             	add    $0x1,%eax
+  5f:	83 c0 01             	add    $0x1,%eax
+  62:	f6 f2                	div    %dl
+  64:	f6 f2                	div    %dl
+  66:	83 e8 01             	sub    $0x1,%eax
+  69:	83 e8 01             	sub    $0x1,%eax
+  6c:	83 e8 03             	sub    $0x3,%eax
+  6f:	83 e8 01             	sub    $0x1,%eax
+  72:	83 e8 01             	sub    $0x1,%eax
+  75:	83 e8 01             	sub    $0x1,%eax
+  78:	83 e8 03             	sub    $0x3,%eax
+  7b:	83 e8 01             	sub    $0x1,%eax
+  7e:	83 e8 01             	sub    $0x1,%eax
+  81:	83 e8 02             	sub    $0x2,%eax
+  84:	83 e8 01             	sub    $0x1,%eax
+  87:	83 e8 01             	sub    $0x1,%eax
+  8a:	83 e8 01             	sub    $0x1,%eax
+  8d:	83 e8 01             	sub    $0x1,%eax
+  90:	83 e8 01             	sub    $0x1,%eax
+  93:	6b c0 02             	imul   $0x2,%eax,%eax
+  96:	6b c0 02             	imul   $0x2,%eax,%eax
+  99:	6b c0 02             	imul   $0x2,%eax,%eax
+  9c:	83 c0 01             	add    $0x1,%eax
+  9f:	83 c0 01             	add    $0x1,%eax
+  a2:	83 c0 03             	add    $0x3,%eax
+  a5:	83 c0 01             	add    $0x1,%eax
+  a8:	83 c0 01             	add    $0x1,%eax
+  ab:	83 c0 01             	add    $0x1,%eax
+  ae:	83 c0 03             	add    $0x3,%eax
+  b1:	83 c0 01             	add    $0x1,%eax
+  b4:	83 c0 01             	add    $0x1,%eax
+  b7:	83 c0 02             	add    $0x2,%eax
+  ba:	83 c0 01             	add    $0x1,%eax
+  bd:	83 c0 01             	add    $0x1,%eax
+  c0:	83 c0 01             	add    $0x1,%eax
+  c3:	83 c0 01             	add    $0x1,%eax
+  c6:	83 c0 01             	add    $0x1,%eax
+  c9:	f6 f2                	div    %dl
+  cb:	f6 f2                	div    %dl
+  cd:	83 e8 01             	sub    $0x1,%eax
+  d0:	83 e8 01             	sub    $0x1,%eax
+  d3:	83 e8 03             	sub    $0x3,%eax
+  d6:	83 e8 01             	sub    $0x1,%eax
+  d9:	83 e8 01             	sub    $0x1,%eax
+  dc:	83 e8 01             	sub    $0x1,%eax
+  df:	83 e8 03             	sub    $0x3,%eax
+  e2:	83 e8 01             	sub    $0x1,%eax
+  e5:	83 e8 01             	sub    $0x1,%eax
+  e8:	83 e8 02             	sub    $0x2,%eax
+  eb:	83 e8 01             	sub    $0x1,%eax
+  ee:	83 e8 01             	sub    $0x1,%eax
+  f1:	83 e8 01             	sub    $0x1,%eax
+  f4:	83 e8 01             	sub    $0x1,%eax
+  f7:	83 e8 01             	sub    $0x1,%eax
+  fa:	6b c0 02             	imul   $0x2,%eax,%eax
+  fd:	6b c0 02             	imul   $0x2,%eax,%eax
+ 100:	6b c0 02             	imul   $0x2,%eax,%eax
+ 103:	83 c0 01             	add    $0x1,%eax
+ 106:	83 c0 01             	add    $0x1,%eax
+ 109:	83 c0 03             	add    $0x3,%eax
+ 10c:	83 c0 01             	add    $0x1,%eax
+ 10f:	83 c0 01             	add    $0x1,%eax
+ 112:	83 c0 01             	add    $0x1,%eax
+ 115:	83 c0 03             	add    $0x3,%eax
+ 118:	83 c0 01             	add    $0x1,%eax
+ 11b:	83 c0 01             	add    $0x1,%eax
+ 11e:	83 c0 02             	add    $0x2,%eax
+ 121:	83 c0 01             	add    $0x1,%eax
+ 124:	83 c0 01             	add    $0x1,%eax
+ 127:	83 c0 01             	add    $0x1,%eax
+ 12a:	83 c0 01             	add    $0x1,%eax
+ 12d:	83 c0 01             	add    $0x1,%eax
+ 130:	f6 f2                	div    %dl
+ 132:	f6 f2                	div    %dl
+ 134:	83 e8 01             	sub    $0x1,%eax
+ 137:	83 e8 01             	sub    $0x1,%eax
+ 13a:	83 e8 03             	sub    $0x3,%eax
+ 13d:	83 e8 01             	sub    $0x1,%eax
+ 140:	83 e8 01             	sub    $0x1,%eax
+ 143:	83 e8 01             	sub    $0x1,%eax
+ 146:	83 e8 03             	sub    $0x3,%eax
+ 149:	83 e8 01             	sub    $0x1,%eax
+ 14c:	83 e8 01             	sub    $0x1,%eax
+ 14f:	83 e8 02             	sub    $0x2,%eax
+ 152:	83 e8 01             	sub    $0x1,%eax
+ 155:	83 e8 01             	sub    $0x1,%eax
+ 158:	83 e8 01             	sub    $0x1,%eax
+ 15b:	83 e8 01             	sub    $0x1,%eax
+ 15e:	83 e8 01             	sub    $0x1,%eax
+ 161:	6b c0 02             	imul   $0x2,%eax,%eax
+ 164:	6b c0 02             	imul   $0x2,%eax,%eax
+ 167:	6b c0 02             	imul   $0x2,%eax,%eax
+ 16a:	83 c0 01             	add    $0x1,%eax
+ 16d:	83 c0 01             	add    $0x1,%eax
+ 170:	83 c0 03             	add    $0x3,%eax
+ 173:	83 c0 01             	add    $0x1,%eax
+ 176:	83 c0 01             	add    $0x1,%eax
+ 179:	83 c0 01             	add    $0x1,%eax
+ 17c:	83 c0 03             	add    $0x3,%eax
+ 17f:	83 c0 01             	add    $0x1,%eax
+ 182:	83 c0 01             	add    $0x1,%eax
+ 185:	83 c0 02             	add    $0x2,%eax
+ 188:	83 c0 01             	add    $0x1,%eax
+ 18b:	83 c0 01             	add    $0x1,%eax
+ 18e:	83 c0 01             	add    $0x1,%eax
+ 191:	83 c0 01             	add    $0x1,%eax
+ 194:	83 c0 01             	add    $0x1,%eax
+ 197:	f6 f2                	div    %dl
+ 199:	f6 f2                	div    %dl
+ 19b:	83 e8 01             	sub    $0x1,%eax
+ 19e:	83 e8 01             	sub    $0x1,%eax
+ 1a1:	83 e8 03             	sub    $0x3,%eax
+ 1a4:	83 e8 01             	sub    $0x1,%eax
+ 1a7:	83 e8 01             	sub    $0x1,%eax
+ 1aa:	83 e8 01             	sub    $0x1,%eax
+ 1ad:	83 e8 03             	sub    $0x3,%eax
+ 1b0:	83 e8 01             	sub    $0x1,%eax
+ 1b3:	83 e8 01             	sub    $0x1,%eax
+ 1b6:	83 e8 02             	sub    $0x2,%eax
+ 1b9:	83 e8 01             	sub    $0x1,%eax
+ 1bc:	83 e8 01             	sub    $0x1,%eax
+ 1bf:	83 e8 01             	sub    $0x1,%eax
+ 1c2:	83 e8 01             	sub    $0x1,%eax
+ 1c5:	83 e8 01             	sub    $0x1,%eax
+ 1c8:	6b c0 02             	imul   $0x2,%eax,%eax
+ 1cb:	6b c0 02             	imul   $0x2,%eax,%eax
+ 1ce:	6b c0 02             	imul   $0x2,%eax,%eax
+ 1d1:	83 c0 01             	add    $0x1,%eax
+ 1d4:	83 c0 01             	add    $0x1,%eax
+ 1d7:	83 c0 03             	add    $0x3,%eax
+ 1da:	83 c0 01             	add    $0x1,%eax
+ 1dd:	83 c0 01             	add    $0x1,%eax
+ 1e0:	83 c0 01             	add    $0x1,%eax
+ 1e3:	83 c0 03             	add    $0x3,%eax
+ 1e6:	83 c0 01             	add    $0x1,%eax
+ 1e9:	83 c0 01             	add    $0x1,%eax
+ 1ec:	83 c0 02             	add    $0x2,%eax
+ 1ef:	83 c0 01             	add    $0x1,%eax
+ 1f2:	83 c0 01             	add    $0x1,%eax
+ 1f5:	83 c0 01             	add    $0x1,%eax
+ 1f8:	83 c0 01             	add    $0x1,%eax
+ 1fb:	83 c0 01             	add    $0x1,%eax
+ 1fe:	f6 f2                	div    %dl
+ 200:	f6 f2                	div    %dl
+ 202:	83 e8 01             	sub    $0x1,%eax
+ 205:	83 e8 01             	sub    $0x1,%eax
+ 208:	83 e8 03             	sub    $0x3,%eax
+ 20b:	83 e8 01             	sub    $0x1,%eax
+ 20e:	83 e8 01             	sub    $0x1,%eax
+ 211:	83 e8 01             	sub    $0x1,%eax
+ 214:	83 e8 03             	sub    $0x3,%eax
+ 217:	83 e8 01             	sub    $0x1,%eax
+ 21a:	83 e8 01             	sub    $0x1,%eax
+ 21d:	83 e8 02             	sub    $0x2,%eax
+ 220:	83 e8 01             	sub    $0x1,%eax
+ 223:	83 e8 01             	sub    $0x1,%eax
+ 226:	83 e8 01             	sub    $0x1,%eax
+ 229:	83 e8 01             	sub    $0x1,%eax
+ 22c:	83 e8 01             	sub    $0x1,%eax
+ 22f:	6b c0 02             	imul   $0x2,%eax,%eax
+ 232:	6b c0 02             	imul   $0x2,%eax,%eax
+ 235:	6b c0 02             	imul   $0x2,%eax,%eax
+ 238:	83 c0 01             	add    $0x1,%eax
+ 23b:	83 c0 01             	add    $0x1,%eax
+ 23e:	83 c0 03             	add    $0x3,%eax
+ 241:	83 c0 01             	add    $0x1,%eax
+ 244:	83 c0 01             	add    $0x1,%eax
+ 247:	83 c0 01             	add    $0x1,%eax
+ 24a:	83 c0 03             	add    $0x3,%eax
+ 24d:	83 c0 01             	add    $0x1,%eax
+ 250:	83 c0 01             	add    $0x1,%eax
+ 253:	83 c0 02             	add    $0x2,%eax
+ 256:	83 c0 01             	add    $0x1,%eax
+ 259:	83 c0 01             	add    $0x1,%eax
+ 25c:	83 c0 01             	add    $0x1,%eax
+ 25f:	83 c0 01             	add    $0x1,%eax
+ 262:	83 c0 01             	add    $0x1,%eax
+ 265:	f6 f2                	div    %dl
+ 267:	f6 f2                	div    %dl
+ 269:	83 e8 01             	sub    $0x1,%eax
+ 26c:	83 e8 01             	sub    $0x1,%eax
+ 26f:	83 e8 03             	sub    $0x3,%eax
+ 272:	83 e8 01             	sub    $0x1,%eax
+ 275:	83 e8 01             	sub    $0x1,%eax
+ 278:	83 e8 01             	sub    $0x1,%eax
+ 27b:	83 e8 03             	sub    $0x3,%eax
+ 27e:	83 e8 01             	sub    $0x1,%eax
+ 281:	83 e8 01             	sub    $0x1,%eax
+ 284:	83 e8 02             	sub    $0x2,%eax
+ 287:	83 e8 01             	sub    $0x1,%eax
+ 28a:	83 e8 01             	sub    $0x1,%eax
+ 28d:	83 e8 01             	sub    $0x1,%eax
+ 290:	83 e8 01             	sub    $0x1,%eax
+ 293:	83 e8 01             	sub    $0x1,%eax
+ 296:	6b c0 02             	imul   $0x2,%eax,%eax
+ 299:	6b c0 02             	imul   $0x2,%eax,%eax
+ 29c:	6b c0 02             	imul   $0x2,%eax,%eax
+ 29f:	83 c0 01             	add    $0x1,%eax
+ 2a2:	83 c0 01             	add    $0x1,%eax
+ 2a5:	83 c0 03             	add    $0x3,%eax
+ 2a8:	83 c0 01             	add    $0x1,%eax
+ 2ab:	83 c0 01             	add    $0x1,%eax
+ 2ae:	83 c0 01             	add    $0x1,%eax
+ 2b1:	83 c0 03             	add    $0x3,%eax
+ 2b4:	83 c0 01             	add    $0x1,%eax
+ 2b7:	83 c0 01             	add    $0x1,%eax
+ 2ba:	83 c0 02             	add    $0x2,%eax
+ 2bd:	83 c0 01             	add    $0x1,%eax
+ 2c0:	83 c0 01             	add    $0x1,%eax
+ 2c3:	83 c0 01             	add    $0x1,%eax
+ 2c6:	83 c0 01             	add    $0x1,%eax
+ 2c9:	83 c0 01             	add    $0x1,%eax
+ 2cc:	f6 f2                	div    %dl
+ 2ce:	f6 f2                	div    %dl
+ 2d0:	83 e8 01             	sub    $0x1,%eax
+ 2d3:	83 e8 01             	sub    $0x1,%eax
+ 2d6:	83 e8 03             	sub    $0x3,%eax
+ 2d9:	83 e8 01             	sub    $0x1,%eax
+ 2dc:	83 e8 01             	sub    $0x1,%eax
+ 2df:	83 e8 01             	sub    $0x1,%eax
+ 2e2:	83 e8 03             	sub    $0x3,%eax
+ 2e5:	83 e8 01             	sub    $0x1,%eax
+ 2e8:	83 e8 01             	sub    $0x1,%eax
+ 2eb:	83 e8 02             	sub    $0x2,%eax
+ 2ee:	83 e8 01             	sub    $0x1,%eax
+ 2f1:	83 e8 01             	sub    $0x1,%eax
+ 2f4:	83 e8 01             	sub    $0x1,%eax
+ 2f7:	83 e8 01             	sub    $0x1,%eax
+ 2fa:	83 e8 01             	sub    $0x1,%eax
+ 2fd:	6b c0 02             	imul   $0x2,%eax,%eax
+ 300:	6b c0 02             	imul   $0x2,%eax,%eax
+ 303:	6b c0 02             	imul   $0x2,%eax,%eax
+ 306:	83 c0 01             	add    $0x1,%eax
+ 309:	83 c0 01             	add    $0x1,%eax
+ 30c:	83 c0 03             	add    $0x3,%eax
+ 30f:	83 c0 01             	add    $0x1,%eax
+ 312:	83 c0 01             	add    $0x1,%eax
+ 315:	83 c0 01             	add    $0x1,%eax
+ 318:	83 c0 03             	add    $0x3,%eax
+ 31b:	83 c0 01             	add    $0x1,%eax
+ 31e:	83 c0 01             	add    $0x1,%eax
+ 321:	83 c0 02             	add    $0x2,%eax
+ 324:	83 c0 01             	add    $0x1,%eax
+ 327:	83 c0 01             	add    $0x1,%eax
+ 32a:	83 c0 01             	add    $0x1,%eax
+ 32d:	83 c0 01             	add    $0x1,%eax
+ 330:	83 c0 01             	add    $0x1,%eax
+ 333:	f6 f2                	div    %dl
+ 335:	f6 f2                	div    %dl
+ 337:	83 e8 01             	sub    $0x1,%eax
+ 33a:	83 e8 01             	sub    $0x1,%eax
+ 33d:	83 e8 03             	sub    $0x3,%eax
+ 340:	83 e8 01             	sub    $0x1,%eax
+ 343:	83 e8 01             	sub    $0x1,%eax
+ 346:	83 e8 01             	sub    $0x1,%eax
+ 349:	83 e8 03             	sub    $0x3,%eax
+ 34c:	83 e8 01             	sub    $0x1,%eax
+ 34f:	83 e8 01             	sub    $0x1,%eax
+ 352:	83 e8 02             	sub    $0x2,%eax
+ 355:	83 e8 01             	sub    $0x1,%eax
+ 358:	83 e8 01             	sub    $0x1,%eax
+ 35b:	83 e8 01             	sub    $0x1,%eax
+ 35e:	83 e8 01             	sub    $0x1,%eax
+ 361:	83 e8 01             	sub    $0x1,%eax
+ 364:	6b c0 02             	imul   $0x2,%eax,%eax
+ 367:	6b c0 02             	imul   $0x2,%eax,%eax
+ 36a:	6b c0 02             	imul   $0x2,%eax,%eax
+ 36d:	83 c0 01             	add    $0x1,%eax
+ 370:	83 c0 01             	add    $0x1,%eax
+ 373:	83 c0 03             	add    $0x3,%eax
+ 376:	83 c0 01             	add    $0x1,%eax
+ 379:	83 c0 01             	add    $0x1,%eax
+ 37c:	83 c0 01             	add    $0x1,%eax
+ 37f:	83 c0 03             	add    $0x3,%eax
+ 382:	83 c0 01             	add    $0x1,%eax
+ 385:	83 c0 01             	add    $0x1,%eax
+ 388:	83 c0 02             	add    $0x2,%eax
+ 38b:	83 c0 01             	add    $0x1,%eax
+ 38e:	83 c0 01             	add    $0x1,%eax
+ 391:	83 c0 01             	add    $0x1,%eax
+ 394:	83 c0 01             	add    $0x1,%eax
+ 397:	83 c0 01             	add    $0x1,%eax
+ 39a:	f6 f2                	div    %dl
+ 39c:	f6 f2                	div    %dl
+ 39e:	83 e8 01             	sub    $0x1,%eax
+ 3a1:	83 e8 01             	sub    $0x1,%eax
+ 3a4:	83 e8 03             	sub    $0x3,%eax
+ 3a7:	83 e8 01             	sub    $0x1,%eax
+ 3aa:	83 e8 01             	sub    $0x1,%eax
+ 3ad:	83 e8 01             	sub    $0x1,%eax
+ 3b0:	83 e8 03             	sub    $0x3,%eax
+ 3b3:	83 e8 01             	sub    $0x1,%eax
+ 3b6:	83 e8 01             	sub    $0x1,%eax
+ 3b9:	83 e8 02             	sub    $0x2,%eax
+ 3bc:	83 e8 01             	sub    $0x1,%eax
+ 3bf:	83 e8 01             	sub    $0x1,%eax
+ 3c2:	83 e8 01             	sub    $0x1,%eax
+ 3c5:	83 e8 01             	sub    $0x1,%eax
+ 3c8:	83 e8 01             	sub    $0x1,%eax
+ 3cb:	6b c0 02             	imul   $0x2,%eax,%eax
+ 3ce:	6b c0 02             	imul   $0x2,%eax,%eax
+ 3d1:	6b c0 02             	imul   $0x2,%eax,%eax
+ 3d4:	83 c0 01             	add    $0x1,%eax
+ 3d7:	83 c0 01             	add    $0x1,%eax
+ 3da:	83 c0 03             	add    $0x3,%eax
+ 3dd:	83 c0 01             	add    $0x1,%eax
+ 3e0:	83 c0 01             	add    $0x1,%eax
+ 3e3:	83 c0 01             	add    $0x1,%eax
+ 3e6:	83 c0 03             	add    $0x3,%eax
+ 3e9:	83 c0 01             	add    $0x1,%eax
+ 3ec:	83 c0 01             	add    $0x1,%eax
+ 3ef:	83 c0 02             	add    $0x2,%eax
+ 3f2:	83 c0 01             	add    $0x1,%eax
+ 3f5:	83 c0 01             	add    $0x1,%eax
+ 3f8:	83 c0 01             	add    $0x1,%eax
+ 3fb:	83 c0 01             	add    $0x1,%eax
+ 3fe:	83 c0 01             	add    $0x1,%eax
+ 401:	f6 f2                	div    %dl
+ 403:	f6 f2                	div    %dl
+ 405:	83 e8 01             	sub    $0x1,%eax
+ 408:	83 e8 01             	sub    $0x1,%eax
+ 40b:	83 e8 03             	sub    $0x3,%eax
+ 40e:	83 e8 01             	sub    $0x1,%eax
+ 411:	83 e8 01             	sub    $0x1,%eax
+ 414:	83 e8 01             	sub    $0x1,%eax
+ 417:	83 e8 03             	sub    $0x3,%eax
+ 41a:	83 e8 01             	sub    $0x1,%eax
+ 41d:	83 e8 01             	sub    $0x1,%eax
+ 420:	83 e8 02             	sub    $0x2,%eax
+ 423:	83 e8 01             	sub    $0x1,%eax
+ 426:	83 e8 01             	sub    $0x1,%eax
+ 429:	83 e8 01             	sub    $0x1,%eax
+ 42c:	83 e8 01             	sub    $0x1,%eax
+ 42f:	83 e8 01             	sub    $0x1,%eax
+ 432:	6b c0 02             	imul   $0x2,%eax,%eax
+ 435:	6b c0 02             	imul   $0x2,%eax,%eax
+ 438:	6b c0 02             	imul   $0x2,%eax,%eax
+ 43b:	83 c0 01             	add    $0x1,%eax
+ 43e:	83 c0 01             	add    $0x1,%eax
+ 441:	83 c0 03             	add    $0x3,%eax
+ 444:	83 c0 01             	add    $0x1,%eax
+ 447:	83 c0 01             	add    $0x1,%eax
+ 44a:	83 c0 01             	add    $0x1,%eax
+ 44d:	83 c0 03             	add    $0x3,%eax
+ 450:	83 c0 01             	add    $0x1,%eax
+ 453:	83 c0 01             	add    $0x1,%eax
+ 456:	83 c0 02             	add    $0x2,%eax
+ 459:	83 c0 01             	add    $0x1,%eax
+ 45c:	83 c0 01             	add    $0x1,%eax
+ 45f:	83 c0 01             	add    $0x1,%eax
+ 462:	83 c0 01             	add    $0x1,%eax
+ 465:	83 c0 01             	add    $0x1,%eax
+ 468:	f6 f2                	div    %dl
+ 46a:	f6 f2                	div    %dl
+ 46c:	83 e8 01             	sub    $0x1,%eax
+ 46f:	83 e8 01             	sub    $0x1,%eax
+ 472:	83 e8 03             	sub    $0x3,%eax
+ 475:	83 e8 01             	sub    $0x1,%eax
+ 478:	83 e8 01             	sub    $0x1,%eax
+ 47b:	83 e8 01             	sub    $0x1,%eax
+ 47e:	83 e8 03             	sub    $0x3,%eax
+ 481:	83 e8 01             	sub    $0x1,%eax
+ 484:	83 e8 01             	sub    $0x1,%eax
+ 487:	83 e8 02             	sub    $0x2,%eax
+ 48a:	83 e8 01             	sub    $0x1,%eax
+ 48d:	83 e8 01             	sub    $0x1,%eax
+ 490:	83 e8 01             	sub    $0x1,%eax
+ 493:	83 e8 01             	sub    $0x1,%eax
+ 496:	83 e8 01             	sub    $0x1,%eax
+ 499:	6b c0 02             	imul   $0x2,%eax,%eax
+ 49c:	6b c0 02             	imul   $0x2,%eax,%eax
+ 49f:	6b c0 02             	imul   $0x2,%eax,%eax
+ 4a2:	83 c0 01             	add    $0x1,%eax
+ 4a5:	83 c0 01             	add    $0x1,%eax
+ 4a8:	83 c0 03             	add    $0x3,%eax
+ 4ab:	83 c0 01             	add    $0x1,%eax
+ 4ae:	83 c0 01             	add    $0x1,%eax
+ 4b1:	83 c0 01             	add    $0x1,%eax
+ 4b4:	83 c0 03             	add    $0x3,%eax
+ 4b7:	83 c0 01             	add    $0x1,%eax
+ 4ba:	83 c0 01             	add    $0x1,%eax
+ 4bd:	83 c0 02             	add    $0x2,%eax
+ 4c0:	83 c0 01             	add    $0x1,%eax
+ 4c3:	83 c0 01             	add    $0x1,%eax
+ 4c6:	83 c0 01             	add    $0x1,%eax
+ 4c9:	83 c0 01             	add    $0x1,%eax
+ 4cc:	83 c0 01             	add    $0x1,%eax
+ 4cf:	f6 f2                	div    %dl
+ 4d1:	f6 f2                	div    %dl
+ 4d3:	83 e8 01             	sub    $0x1,%eax
+ 4d6:	83 e8 01             	sub    $0x1,%eax
+ 4d9:	83 e8 03             	sub    $0x3,%eax
+ 4dc:	83 e8 01             	sub    $0x1,%eax
+ 4df:	83 e8 01             	sub    $0x1,%eax
+ 4e2:	83 e8 01             	sub    $0x1,%eax
+ 4e5:	83 e8 03             	sub    $0x3,%eax
+ 4e8:	83 e8 01             	sub    $0x1,%eax
+ 4eb:	83 e8 01             	sub    $0x1,%eax
+ 4ee:	83 e8 02             	sub    $0x2,%eax
+ 4f1:	83 e8 01             	sub    $0x1,%eax
+ 4f4:	83 e8 01             	sub    $0x1,%eax
+ 4f7:	83 e8 01             	sub    $0x1,%eax
+ 4fa:	83 e8 01             	sub    $0x1,%eax
+ 4fd:	83 e8 01             	sub    $0x1,%eax
+ 500:	6b c0 02             	imul   $0x2,%eax,%eax
+ 503:	6b c0 02             	imul   $0x2,%eax,%eax
+ 506:	6b c0 02             	imul   $0x2,%eax,%eax
+ 509:	83 c0 01             	add    $0x1,%eax
+ 50c:	83 c0 01             	add    $0x1,%eax
+ 50f:	83 c0 03             	add    $0x3,%eax
+ 512:	83 c0 01             	add    $0x1,%eax
+ 515:	83 c0 01             	add    $0x1,%eax
+ 518:	83 c0 01             	add    $0x1,%eax
+ 51b:	83 c0 03             	add    $0x3,%eax
+ 51e:	83 c0 01             	add    $0x1,%eax
+ 521:	83 c0 01             	add    $0x1,%eax
+ 524:	83 c0 02             	add    $0x2,%eax
+ 527:	83 c0 01             	add    $0x1,%eax
+ 52a:	83 c0 01             	add    $0x1,%eax
+ 52d:	83 c0 01             	add    $0x1,%eax
+ 530:	83 c0 01             	add    $0x1,%eax
+ 533:	83 c0 01             	add    $0x1,%eax
+ 536:	f6 f2                	div    %dl
+ 538:	f6 f2                	div    %dl
+ 53a:	83 e8 01             	sub    $0x1,%eax
+ 53d:	83 e8 01             	sub    $0x1,%eax
+ 540:	83 e8 03             	sub    $0x3,%eax
+ 543:	83 e8 01             	sub    $0x1,%eax
+ 546:	83 e8 01             	sub    $0x1,%eax
+ 549:	83 e8 01             	sub    $0x1,%eax
+ 54c:	83 e8 03             	sub    $0x3,%eax
+ 54f:	83 e8 01             	sub    $0x1,%eax
+ 552:	83 e8 01             	sub    $0x1,%eax
+ 555:	83 e8 02             	sub    $0x2,%eax
+ 558:	83 e8 01             	sub    $0x1,%eax
+ 55b:	83 e8 01             	sub    $0x1,%eax
+ 55e:	83 e8 01             	sub    $0x1,%eax
+ 561:	83 e8 01             	sub    $0x1,%eax
+ 564:	83 e8 01             	sub    $0x1,%eax
+ 567:	6b c0 02             	imul   $0x2,%eax,%eax
+ 56a:	6b c0 02             	imul   $0x2,%eax,%eax
+ 56d:	6b c0 02             	imul   $0x2,%eax,%eax
+ 570:	83 c0 01             	add    $0x1,%eax
+ 573:	83 c0 01             	add    $0x1,%eax
+ 576:	83 c0 03             	add    $0x3,%eax
+ 579:	83 c0 01             	add    $0x1,%eax
+ 57c:	83 c0 01             	add    $0x1,%eax
+ 57f:	83 c0 01             	add    $0x1,%eax
+ 582:	83 c0 03             	add    $0x3,%eax
+ 585:	83 c0 01             	add    $0x1,%eax
+ 588:	83 c0 01             	add    $0x1,%eax
+ 58b:	83 c0 02             	add    $0x2,%eax
+ 58e:	83 c0 01             	add    $0x1,%eax
+ 591:	83 c0 01             	add    $0x1,%eax
+ 594:	83 c0 01             	add    $0x1,%eax
+ 597:	83 c0 01             	add    $0x1,%eax
+ 59a:	83 c0 01             	add    $0x1,%eax
+ 59d:	f6 f2                	div    %dl
+ 59f:	f6 f2                	div    %dl
+ 5a1:	83 e8 01             	sub    $0x1,%eax
+ 5a4:	83 e8 01             	sub    $0x1,%eax
+ 5a7:	83 e8 03             	sub    $0x3,%eax
+ 5aa:	83 e8 01             	sub    $0x1,%eax
+ 5ad:	83 e8 01             	sub    $0x1,%eax
+ 5b0:	83 e8 01             	sub    $0x1,%eax
+ 5b3:	83 e8 03             	sub    $0x3,%eax
+ 5b6:	83 e8 01             	sub    $0x1,%eax
+ 5b9:	83 e8 01             	sub    $0x1,%eax
+ 5bc:	83 e8 02             	sub    $0x2,%eax
+ 5bf:	83 e8 01             	sub    $0x1,%eax
+ 5c2:	83 e8 01             	sub    $0x1,%eax
+ 5c5:	83 e8 01             	sub    $0x1,%eax
+ 5c8:	83 e8 01             	sub    $0x1,%eax
+ 5cb:	83 e8 01             	sub    $0x1,%eax
+ 5ce:	6b c0 02             	imul   $0x2,%eax,%eax
+ 5d1:	6b c0 02             	imul   $0x2,%eax,%eax
+ 5d4:	6b c0 02             	imul   $0x2,%eax,%eax
+ 5d7:	83 c0 01             	add    $0x1,%eax
+ 5da:	83 c0 01             	add    $0x1,%eax
+ 5dd:	83 c0 03             	add    $0x3,%eax
+ 5e0:	83 c0 01             	add    $0x1,%eax
+ 5e3:	83 c0 01             	add    $0x1,%eax
+ 5e6:	83 c0 01             	add    $0x1,%eax
+ 5e9:	83 c0 03             	add    $0x3,%eax
+ 5ec:	83 c0 01             	add    $0x1,%eax
+ 5ef:	83 c0 01             	add    $0x1,%eax
+ 5f2:	83 c0 02             	add    $0x2,%eax
+ 5f5:	83 c0 01             	add    $0x1,%eax
+ 5f8:	83 c0 01             	add    $0x1,%eax
+ 5fb:	83 c0 01             	add    $0x1,%eax
+ 5fe:	83 c0 01             	add    $0x1,%eax
+ 601:	83 c0 01             	add    $0x1,%eax
+ 604:	f6 f2                	div    %dl
+ 606:	f6 f2                	div    %dl
+ 608:	83 e8 01             	sub    $0x1,%eax
+ 60b:	83 e8 01             	sub    $0x1,%eax
+ 60e:	83 e8 03             	sub    $0x3,%eax
+ 611:	83 e8 01             	sub    $0x1,%eax
+ 614:	83 e8 01             	sub    $0x1,%eax
+ 617:	83 e8 01             	sub    $0x1,%eax
+ 61a:	83 e8 03             	sub    $0x3,%eax
+ 61d:	83 e8 01             	sub    $0x1,%eax
+ 620:	83 e8 01             	sub    $0x1,%eax
+ 623:	83 e8 02             	sub    $0x2,%eax
+ 626:	83 e8 01             	sub    $0x1,%eax
+ 629:	83 e8 01             	sub    $0x1,%eax
+ 62c:	83 e8 01             	sub    $0x1,%eax
+ 62f:	83 e8 01             	sub    $0x1,%eax
+ 632:	83 e8 01             	sub    $0x1,%eax
+ 635:	6b c0 02             	imul   $0x2,%eax,%eax
+ 638:	6b c0 02             	imul   $0x2,%eax,%eax
+ 63b:	6b c0 02             	imul   $0x2,%eax,%eax
+ 63e:	83 c0 01             	add    $0x1,%eax
+ 641:	83 c0 01             	add    $0x1,%eax
+ 644:	83 c0 03             	add    $0x3,%eax
+ 647:	83 c0 01             	add    $0x1,%eax
+ 64a:	83 c0 01             	add    $0x1,%eax
+ 64d:	83 c0 01             	add    $0x1,%eax
+ 650:	83 c0 03             	add    $0x3,%eax
+ 653:	83 c0 01             	add    $0x1,%eax
+ 656:	83 c0 01             	add    $0x1,%eax
+ 659:	83 c0 02             	add    $0x2,%eax
+ 65c:	83 c0 01             	add    $0x1,%eax
+ 65f:	83 c0 01             	add    $0x1,%eax
+ 662:	83 c0 01             	add    $0x1,%eax
+ 665:	83 c0 01             	add    $0x1,%eax
+ 668:	83 c0 01             	add    $0x1,%eax
+ 66b:	f6 f2                	div    %dl
+ 66d:	f6 f2                	div    %dl
+ 66f:	83 e8 01             	sub    $0x1,%eax
+ 672:	83 e8 01             	sub    $0x1,%eax
+ 675:	83 e8 03             	sub    $0x3,%eax
+ 678:	83 e8 01             	sub    $0x1,%eax
+ 67b:	83 e8 01             	sub    $0x1,%eax
+ 67e:	83 e8 01             	sub    $0x1,%eax
+ 681:	83 e8 03             	sub    $0x3,%eax
+ 684:	83 e8 01             	sub    $0x1,%eax
+ 687:	83 e8 01             	sub    $0x1,%eax
+ 68a:	83 e8 02             	sub    $0x2,%eax
+ 68d:	83 e8 01             	sub    $0x1,%eax
+ 690:	83 e8 01             	sub    $0x1,%eax
+ 693:	83 e8 01             	sub    $0x1,%eax
+ 696:	83 e8 01             	sub    $0x1,%eax
+ 699:	83 e8 01             	sub    $0x1,%eax
+ 69c:	6b c0 02             	imul   $0x2,%eax,%eax
+ 69f:	6b c0 02             	imul   $0x2,%eax,%eax
+ 6a2:	6b c0 02             	imul   $0x2,%eax,%eax
+ 6a5:	83 c0 01             	add    $0x1,%eax
+ 6a8:	83 c0 01             	add    $0x1,%eax
+ 6ab:	83 c0 03             	add    $0x3,%eax
+ 6ae:	83 c0 01             	add    $0x1,%eax
+ 6b1:	83 c0 01             	add    $0x1,%eax
+ 6b4:	83 c0 01             	add    $0x1,%eax
+ 6b7:	83 c0 03             	add    $0x3,%eax
+ 6ba:	83 c0 01             	add    $0x1,%eax
+ 6bd:	83 c0 01             	add    $0x1,%eax
+ 6c0:	83 c0 02             	add    $0x2,%eax
+ 6c3:	83 c0 01             	add    $0x1,%eax
+ 6c6:	83 c0 01             	add    $0x1,%eax
+ 6c9:	83 c0 01             	add    $0x1,%eax
+ 6cc:	83 c0 01             	add    $0x1,%eax
+ 6cf:	83 c0 01             	add    $0x1,%eax
+ 6d2:	f6 f2                	div    %dl
+ 6d4:	f6 f2                	div    %dl
+ 6d6:	83 e8 01             	sub    $0x1,%eax
+ 6d9:	83 e8 01             	sub    $0x1,%eax
+ 6dc:	83 e8 03             	sub    $0x3,%eax
+ 6df:	83 e8 01             	sub    $0x1,%eax
+ 6e2:	83 e8 01             	sub    $0x1,%eax
+ 6e5:	83 e8 01             	sub    $0x1,%eax
+ 6e8:	83 e8 03             	sub    $0x3,%eax
+ 6eb:	83 e8 01             	sub    $0x1,%eax
+ 6ee:	83 e8 01             	sub    $0x1,%eax
+ 6f1:	83 e8 02             	sub    $0x2,%eax
+ 6f4:	83 e8 01             	sub    $0x1,%eax
+ 6f7:	83 e8 01             	sub    $0x1,%eax
+ 6fa:	83 e8 01             	sub    $0x1,%eax
+ 6fd:	83 e8 01             	sub    $0x1,%eax
+ 700:	83 e8 01             	sub    $0x1,%eax
+ 703:	6b c0 02             	imul   $0x2,%eax,%eax
+ 706:	6b c0 02             	imul   $0x2,%eax,%eax
+ 709:	6b c0 02             	imul   $0x2,%eax,%eax
+ 70c:	83 c0 01             	add    $0x1,%eax
+ 70f:	83 c0 01             	add    $0x1,%eax
+ 712:	83 c0 03             	add    $0x3,%eax
+ 715:	83 c0 01             	add    $0x1,%eax
+ 718:	83 c0 01             	add    $0x1,%eax
+ 71b:	83 c0 01             	add    $0x1,%eax
+ 71e:	83 c0 03             	add    $0x3,%eax
+ 721:	83 c0 01             	add    $0x1,%eax
+ 724:	83 c0 01             	add    $0x1,%eax
+ 727:	83 c0 02             	add    $0x2,%eax
+ 72a:	83 c0 01             	add    $0x1,%eax
+ 72d:	83 c0 01             	add    $0x1,%eax
+ 730:	83 c0 01             	add    $0x1,%eax
+ 733:	83 c0 01             	add    $0x1,%eax
+ 736:	83 c0 01             	add    $0x1,%eax
+ 739:	f6 f2                	div    %dl
+ 73b:	f6 f2                	div    %dl
+ 73d:	83 e8 01             	sub    $0x1,%eax
+ 740:	83 e8 01             	sub    $0x1,%eax
+ 743:	83 e8 03             	sub    $0x3,%eax
+ 746:	83 e8 01             	sub    $0x1,%eax
+ 749:	83 e8 01             	sub    $0x1,%eax
+ 74c:	83 e8 01             	sub    $0x1,%eax
+ 74f:	83 e8 03             	sub    $0x3,%eax
+ 752:	83 e8 01             	sub    $0x1,%eax
+ 755:	83 e8 01             	sub    $0x1,%eax
+ 758:	83 e8 02             	sub    $0x2,%eax
+ 75b:	83 e8 01             	sub    $0x1,%eax
+ 75e:	83 e8 01             	sub    $0x1,%eax
+ 761:	83 e8 01             	sub    $0x1,%eax
+ 764:	83 e8 01             	sub    $0x1,%eax
+ 767:	83 e8 01             	sub    $0x1,%eax
+ 76a:	6b c0 02             	imul   $0x2,%eax,%eax
+ 76d:	6b c0 02             	imul   $0x2,%eax,%eax
+ 770:	6b c0 02             	imul   $0x2,%eax,%eax
+ 773:	83 c0 01             	add    $0x1,%eax
+ 776:	83 c0 01             	add    $0x1,%eax
+ 779:	83 c0 03             	add    $0x3,%eax
+ 77c:	83 c0 01             	add    $0x1,%eax
+ 77f:	83 c0 01             	add    $0x1,%eax
+ 782:	83 c0 01             	add    $0x1,%eax
+ 785:	83 c0 03             	add    $0x3,%eax
+ 788:	83 c0 01             	add    $0x1,%eax
+ 78b:	83 c0 01             	add    $0x1,%eax
+ 78e:	83 c0 02             	add    $0x2,%eax
+ 791:	83 c0 01             	add    $0x1,%eax
+ 794:	83 c0 01             	add    $0x1,%eax
+ 797:	83 c0 01             	add    $0x1,%eax
+ 79a:	83 c0 01             	add    $0x1,%eax
+ 79d:	83 c0 01             	add    $0x1,%eax
+ 7a0:	f6 f2                	div    %dl
+ 7a2:	f6 f2                	div    %dl
+ 7a4:	83 e8 01             	sub    $0x1,%eax
+ 7a7:	83 e8 01             	sub    $0x1,%eax
+ 7aa:	83 e8 03             	sub    $0x3,%eax
+ 7ad:	83 e8 01             	sub    $0x1,%eax
+ 7b0:	83 e8 01             	sub    $0x1,%eax
+ 7b3:	83 e8 01             	sub    $0x1,%eax
+ 7b6:	83 e8 03             	sub    $0x3,%eax
+ 7b9:	83 e8 01             	sub    $0x1,%eax
+ 7bc:	83 e8 01             	sub    $0x1,%eax
+ 7bf:	83 e8 02             	sub    $0x2,%eax
+ 7c2:	83 e8 01             	sub    $0x1,%eax
+ 7c5:	83 e8 01             	sub    $0x1,%eax
+ 7c8:	83 e8 01             	sub    $0x1,%eax
+ 7cb:	83 e8 01             	sub    $0x1,%eax
+ 7ce:	83 e8 01             	sub    $0x1,%eax
+ 7d1:	6b c0 02             	imul   $0x2,%eax,%eax
+ 7d4:	6b c0 02             	imul   $0x2,%eax,%eax
+ 7d7:	6b c0 02             	imul   $0x2,%eax,%eax
+ 7da:	83 c0 01             	add    $0x1,%eax
+ 7dd:	83 c0 01             	add    $0x1,%eax
+ 7e0:	83 c0 03             	add    $0x3,%eax
+ 7e3:	83 c0 01             	add    $0x1,%eax
+ 7e6:	83 c0 01             	add    $0x1,%eax
+ 7e9:	83 c0 01             	add    $0x1,%eax
+ 7ec:	83 c0 03             	add    $0x3,%eax
+ 7ef:	83 c0 01             	add    $0x1,%eax
+ 7f2:	83 c0 01             	add    $0x1,%eax
+ 7f5:	83 c0 02             	add    $0x2,%eax
+ 7f8:	83 c0 01             	add    $0x1,%eax
+ 7fb:	83 c0 01             	add    $0x1,%eax
+ 7fe:	83 c0 01             	add    $0x1,%eax
+ 801:	83 c0 01             	add    $0x1,%eax
+ 804:	83 c0 01             	add    $0x1,%eax
+ 807:	f6 f2                	div    %dl
+ 809:	f6 f2                	div    %dl
+ 80b:	83 e8 01             	sub    $0x1,%eax
+ 80e:	83 e8 01             	sub    $0x1,%eax
+ 811:	83 e8 03             	sub    $0x3,%eax
+ 814:	83 e8 01             	sub    $0x1,%eax
+ 817:	83 e8 01             	sub    $0x1,%eax
+ 81a:	83 e8 01             	sub    $0x1,%eax
+ 81d:	83 e8 03             	sub    $0x3,%eax
+ 820:	83 e8 01             	sub    $0x1,%eax
+ 823:	83 e8 01             	sub    $0x1,%eax
+ 826:	83 e8 02             	sub    $0x2,%eax
+ 829:	83 e8 01             	sub    $0x1,%eax
+ 82c:	83 e8 01             	sub    $0x1,%eax
+ 82f:	83 e8 01             	sub    $0x1,%eax
+ 832:	83 e8 01             	sub    $0x1,%eax
+ 835:	83 e8 01             	sub    $0x1,%eax
+ 838:	6b c0 02             	imul   $0x2,%eax,%eax
+ 83b:	6b c0 02             	imul   $0x2,%eax,%eax
+ 83e:	6b c0 02             	imul   $0x2,%eax,%eax
+ 841:	83 c0 01             	add    $0x1,%eax
+ 844:	83 c0 01             	add    $0x1,%eax
+ 847:	83 c0 03             	add    $0x3,%eax
+ 84a:	83 c0 01             	add    $0x1,%eax
+ 84d:	83 c0 01             	add    $0x1,%eax
+ 850:	83 c0 01             	add    $0x1,%eax
+ 853:	83 c0 03             	add    $0x3,%eax
+ 856:	83 c0 01             	add    $0x1,%eax
+ 859:	83 c0 01             	add    $0x1,%eax
+ 85c:	83 c0 02             	add    $0x2,%eax
+ 85f:	83 c0 01             	add    $0x1,%eax
+ 862:	83 c0 01             	add    $0x1,%eax
+ 865:	83 c0 01             	add    $0x1,%eax
+ 868:	83 c0 01             	add    $0x1,%eax
+ 86b:	83 c0 01             	add    $0x1,%eax
+ 86e:	f6 f2                	div    %dl
+ 870:	f6 f2                	div    %dl
+ 872:	83 e8 01             	sub    $0x1,%eax
+ 875:	83 e8 01             	sub    $0x1,%eax
+ 878:	83 e8 03             	sub    $0x3,%eax
+ 87b:	83 e8 01             	sub    $0x1,%eax
+ 87e:	83 e8 01             	sub    $0x1,%eax
+ 881:	83 e8 01             	sub    $0x1,%eax
+ 884:	83 e8 03             	sub    $0x3,%eax
+ 887:	83 e8 01             	sub    $0x1,%eax
+ 88a:	83 e8 01             	sub    $0x1,%eax
+ 88d:	83 e8 02             	sub    $0x2,%eax
+ 890:	83 e8 01             	sub    $0x1,%eax
+ 893:	83 e8 01             	sub    $0x1,%eax
+ 896:	83 e8 01             	sub    $0x1,%eax
+ 899:	83 e8 01             	sub    $0x1,%eax
+ 89c:	83 e8 01             	sub    $0x1,%eax
+ 89f:	6b c0 02             	imul   $0x2,%eax,%eax
+ 8a2:	6b c0 02             	imul   $0x2,%eax,%eax
+ 8a5:	6b c0 02             	imul   $0x2,%eax,%eax
+ 8a8:	83 c0 01             	add    $0x1,%eax
+ 8ab:	83 c0 01             	add    $0x1,%eax
+ 8ae:	83 c0 03             	add    $0x3,%eax
+ 8b1:	83 c0 01             	add    $0x1,%eax
+ 8b4:	83 c0 01             	add    $0x1,%eax
+ 8b7:	83 c0 01             	add    $0x1,%eax
+ 8ba:	83 c0 03             	add    $0x3,%eax
+ 8bd:	83 c0 01             	add    $0x1,%eax
+ 8c0:	83 c0 01             	add    $0x1,%eax
+ 8c3:	83 c0 02             	add    $0x2,%eax
+ 8c6:	83 c0 01             	add    $0x1,%eax
+ 8c9:	83 c0 01             	add    $0x1,%eax
+ 8cc:	83 c0 01             	add    $0x1,%eax
+ 8cf:	83 c0 01             	add    $0x1,%eax
+ 8d2:	83 c0 01             	add    $0x1,%eax
+ 8d5:	f6 f2                	div    %dl
+ 8d7:	f6 f2                	div    %dl
+ 8d9:	83 e8 01             	sub    $0x1,%eax
+ 8dc:	83 e8 01             	sub    $0x1,%eax
+ 8df:	83 e8 03             	sub    $0x3,%eax
+ 8e2:	83 e8 01             	sub    $0x1,%eax
+ 8e5:	83 e8 01             	sub    $0x1,%eax
+ 8e8:	83 e8 01             	sub    $0x1,%eax
+ 8eb:	83 e8 03             	sub    $0x3,%eax
+ 8ee:	83 e8 01             	sub    $0x1,%eax
+ 8f1:	83 e8 01             	sub    $0x1,%eax
+ 8f4:	83 e8 02             	sub    $0x2,%eax
+ 8f7:	83 e8 01             	sub    $0x1,%eax
+ 8fa:	83 e8 01             	sub    $0x1,%eax
+ 8fd:	83 e8 01             	sub    $0x1,%eax
+ 900:	83 e8 01             	sub    $0x1,%eax
+ 903:	83 e8 01             	sub    $0x1,%eax
+ 906:	6b c0 02             	imul   $0x2,%eax,%eax
+ 909:	6b c0 02             	imul   $0x2,%eax,%eax
+ 90c:	6b c0 02             	imul   $0x2,%eax,%eax
+ 90f:	83 c0 01             	add    $0x1,%eax
+ 912:	83 c0 01             	add    $0x1,%eax
+ 915:	83 c0 03             	add    $0x3,%eax
+ 918:	83 c0 01             	add    $0x1,%eax
+ 91b:	83 c0 01             	add    $0x1,%eax
+ 91e:	83 c0 01             	add    $0x1,%eax
+ 921:	83 c0 03             	add    $0x3,%eax
+ 924:	83 c0 01             	add    $0x1,%eax
+ 927:	83 c0 01             	add    $0x1,%eax
+ 92a:	83 c0 02             	add    $0x2,%eax
+ 92d:	83 c0 01             	add    $0x1,%eax
+ 930:	83 c0 01             	add    $0x1,%eax
+ 933:	83 c0 01             	add    $0x1,%eax
+ 936:	83 c0 01             	add    $0x1,%eax
+ 939:	83 c0 01             	add    $0x1,%eax
+ 93c:	f6 f2                	div    %dl
+ 93e:	f6 f2                	div    %dl
+ 940:	83 e8 01             	sub    $0x1,%eax
+ 943:	83 e8 01             	sub    $0x1,%eax
+ 946:	83 e8 03             	sub    $0x3,%eax
+ 949:	83 e8 01             	sub    $0x1,%eax
+ 94c:	83 e8 01             	sub    $0x1,%eax
+ 94f:	83 e8 01             	sub    $0x1,%eax
+ 952:	83 e8 03             	sub    $0x3,%eax
+ 955:	83 e8 01             	sub    $0x1,%eax
+ 958:	83 e8 01             	sub    $0x1,%eax
+ 95b:	83 e8 02             	sub    $0x2,%eax
+ 95e:	83 e8 01             	sub    $0x1,%eax
+ 961:	83 e8 01             	sub    $0x1,%eax
+ 964:	83 e8 01             	sub    $0x1,%eax
+ 967:	83 e8 01             	sub    $0x1,%eax
+ 96a:	83 e8 01             	sub    $0x1,%eax
+ 96d:	6b c0 02             	imul   $0x2,%eax,%eax
+ 970:	6b c0 02             	imul   $0x2,%eax,%eax
+ 973:	6b c0 02             	imul   $0x2,%eax,%eax
+ 976:	83 c0 01             	add    $0x1,%eax
+ 979:	83 c0 01             	add    $0x1,%eax
+ 97c:	83 c0 03             	add    $0x3,%eax
+ 97f:	83 c0 01             	add    $0x1,%eax
+ 982:	83 c0 01             	add    $0x1,%eax
+ 985:	83 c0 01             	add    $0x1,%eax
+ 988:	83 c0 03             	add    $0x3,%eax
+ 98b:	83 c0 01             	add    $0x1,%eax
+ 98e:	83 c0 01             	add    $0x1,%eax
+ 991:	83 c0 02             	add    $0x2,%eax
+ 994:	83 c0 01             	add    $0x1,%eax
+ 997:	83 c0 01             	add    $0x1,%eax
+ 99a:	83 c0 01             	add    $0x1,%eax
+ 99d:	83 c0 01             	add    $0x1,%eax
+ 9a0:	83 c0 01             	add    $0x1,%eax
+ 9a3:	f6 f2                	div    %dl
+ 9a5:	f6 f2                	div    %dl
+ 9a7:	83 e8 01             	sub    $0x1,%eax
+ 9aa:	83 e8 01             	sub    $0x1,%eax
+ 9ad:	83 e8 03             	sub    $0x3,%eax
+ 9b0:	83 e8 01             	sub    $0x1,%eax
+ 9b3:	83 e8 01             	sub    $0x1,%eax
+ 9b6:	83 e8 01             	sub    $0x1,%eax
+ 9b9:	83 e8 03             	sub    $0x3,%eax
+ 9bc:	83 e8 01             	sub    $0x1,%eax
+ 9bf:	83 e8 01             	sub    $0x1,%eax
+ 9c2:	83 e8 02             	sub    $0x2,%eax
+ 9c5:	83 e8 01             	sub    $0x1,%eax
+ 9c8:	83 e8 01             	sub    $0x1,%eax
+ 9cb:	83 e8 01             	sub    $0x1,%eax
+ 9ce:	83 e8 01             	sub    $0x1,%eax
+ 9d1:	83 e8 01             	sub    $0x1,%eax
+ 9d4:	6b c0 02             	imul   $0x2,%eax,%eax
+ 9d7:	6b c0 02             	imul   $0x2,%eax,%eax
+ 9da:	6b c0 02             	imul   $0x2,%eax,%eax
+ 9dd:	83 c0 01             	add    $0x1,%eax
+ 9e0:	83 c0 01             	add    $0x1,%eax
+ 9e3:	83 c0 03             	add    $0x3,%eax
+ 9e6:	83 c0 01             	add    $0x1,%eax
+ 9e9:	83 c0 01             	add    $0x1,%eax
+ 9ec:	83 c0 01             	add    $0x1,%eax
+ 9ef:	83 c0 03             	add    $0x3,%eax
+ 9f2:	83 c0 01             	add    $0x1,%eax
+ 9f5:	83 c0 01             	add    $0x1,%eax
+ 9f8:	83 c0 02             	add    $0x2,%eax
+ 9fb:	83 c0 01             	add    $0x1,%eax
+ 9fe:	83 c0 01             	add    $0x1,%eax
+ a01:	83 c0 01             	add    $0x1,%eax
+ a04:	83 c0 01             	add    $0x1,%eax
+ a07:	83 c0 01             	add    $0x1,%eax
+ a0a:	f6 f2                	div    %dl
+ a0c:	f6 f2                	div    %dl
+ a0e:	83 e8 01             	sub    $0x1,%eax
+ a11:	83 e8 01             	sub    $0x1,%eax
+ a14:	83 e8 03             	sub    $0x3,%eax
+ a17:	83 e8 01             	sub    $0x1,%eax
+ a1a:	83 e8 01             	sub    $0x1,%eax
+ a1d:	83 e8 01             	sub    $0x1,%eax
+ a20:	83 e8 03             	sub    $0x3,%eax
+ a23:	83 e8 01             	sub    $0x1,%eax
+ a26:	83 e8 01             	sub    $0x1,%eax
+ a29:	83 e8 02             	sub    $0x2,%eax
+ a2c:	83 e8 01             	sub    $0x1,%eax
+ a2f:	83 e8 01             	sub    $0x1,%eax
+ a32:	83 e8 01             	sub    $0x1,%eax
+ a35:	83 e8 01             	sub    $0x1,%eax
+ a38:	83 e8 01             	sub    $0x1,%eax
+ a3b:	6b c0 02             	imul   $0x2,%eax,%eax
+ a3e:	6b c0 02             	imul   $0x2,%eax,%eax
+ a41:	6b c0 02             	imul   $0x2,%eax,%eax
+ a44:	83 c0 01             	add    $0x1,%eax
+ a47:	83 c0 01             	add    $0x1,%eax
+ a4a:	83 c0 03             	add    $0x3,%eax
+ a4d:	83 c0 01             	add    $0x1,%eax
+ a50:	83 c0 01             	add    $0x1,%eax
+ a53:	83 c0 01             	add    $0x1,%eax
+ a56:	83 c0 03             	add    $0x3,%eax
+ a59:	83 c0 01             	add    $0x1,%eax
+ a5c:	83 c0 01             	add    $0x1,%eax
+ a5f:	83 c0 02             	add    $0x2,%eax
+ a62:	83 c0 01             	add    $0x1,%eax
+ a65:	83 c0 01             	add    $0x1,%eax
+ a68:	83 c0 01             	add    $0x1,%eax
+ a6b:	83 c0 01             	add    $0x1,%eax
+ a6e:	83 c0 01             	add    $0x1,%eax
+ a71:	f6 f2                	div    %dl
+ a73:	f6 f2                	div    %dl
+ a75:	83 e8 01             	sub    $0x1,%eax
+ a78:	83 e8 01             	sub    $0x1,%eax
+ a7b:	83 e8 03             	sub    $0x3,%eax
+ a7e:	83 e8 01             	sub    $0x1,%eax
+ a81:	83 e8 01             	sub    $0x1,%eax
+ a84:	83 e8 01             	sub    $0x1,%eax
+ a87:	83 e8 03             	sub    $0x3,%eax
+ a8a:	83 e8 01             	sub    $0x1,%eax
+ a8d:	83 e8 01             	sub    $0x1,%eax
+ a90:	83 e8 02             	sub    $0x2,%eax
+ a93:	83 e8 01             	sub    $0x1,%eax
+ a96:	83 e8 01             	sub    $0x1,%eax
+ a99:	83 e8 01             	sub    $0x1,%eax
+ a9c:	83 e8 01             	sub    $0x1,%eax
+ a9f:	83 e8 01             	sub    $0x1,%eax
+ aa2:	6b c0 02             	imul   $0x2,%eax,%eax
+ aa5:	6b c0 02             	imul   $0x2,%eax,%eax
+ aa8:	6b c0 02             	imul   $0x2,%eax,%eax
+ aab:	83 c0 01             	add    $0x1,%eax
+ aae:	83 c0 01             	add    $0x1,%eax
+ ab1:	83 c0 03             	add    $0x3,%eax
+ ab4:	83 c0 01             	add    $0x1,%eax
+ ab7:	83 c0 01             	add    $0x1,%eax
+ aba:	83 c0 01             	add    $0x1,%eax
+ abd:	83 c0 03             	add    $0x3,%eax
+ ac0:	83 c0 01             	add    $0x1,%eax
+ ac3:	83 c0 01             	add    $0x1,%eax
+ ac6:	83 c0 02             	add    $0x2,%eax
+ ac9:	83 c0 01             	add    $0x1,%eax
+ acc:	83 c0 01             	add    $0x1,%eax
+ acf:	83 c0 01             	add    $0x1,%eax
+ ad2:	83 c0 01             	add    $0x1,%eax
+ ad5:	83 c0 01             	add    $0x1,%eax
+ ad8:	f6 f2                	div    %dl
+ ada:	f6 f2                	div    %dl
+ adc:	83 e8 01             	sub    $0x1,%eax
+ adf:	83 e8 01             	sub    $0x1,%eax
+ ae2:	83 e8 03             	sub    $0x3,%eax
+ ae5:	83 e8 01             	sub    $0x1,%eax
+ ae8:	83 e8 01             	sub    $0x1,%eax
+ aeb:	83 e8 01             	sub    $0x1,%eax
+ aee:	83 e8 03             	sub    $0x3,%eax
+ af1:	83 e8 01             	sub    $0x1,%eax
+ af4:	83 e8 01             	sub    $0x1,%eax
+ af7:	83 e8 02             	sub    $0x2,%eax
+ afa:	83 e8 01             	sub    $0x1,%eax
+ afd:	83 e8 01             	sub    $0x1,%eax
+ b00:	83 e8 01             	sub    $0x1,%eax
+ b03:	83 e8 01             	sub    $0x1,%eax
+ b06:	83 e8 01             	sub    $0x1,%eax
+ b09:	6b c0 02             	imul   $0x2,%eax,%eax
+ b0c:	6b c0 02             	imul   $0x2,%eax,%eax
+ b0f:	6b c0 02             	imul   $0x2,%eax,%eax
+ b12:	83 c0 01             	add    $0x1,%eax
+ b15:	83 c0 01             	add    $0x1,%eax
+ b18:	83 c0 03             	add    $0x3,%eax
+ b1b:	83 c0 01             	add    $0x1,%eax
+ b1e:	83 c0 01             	add    $0x1,%eax
+ b21:	83 c0 01             	add    $0x1,%eax
+ b24:	83 c0 03             	add    $0x3,%eax
+ b27:	83 c0 01             	add    $0x1,%eax
+ b2a:	83 c0 01             	add    $0x1,%eax
+ b2d:	83 c0 02             	add    $0x2,%eax
+ b30:	83 c0 01             	add    $0x1,%eax
+ b33:	83 c0 01             	add    $0x1,%eax
+ b36:	83 c0 01             	add    $0x1,%eax
+ b39:	83 c0 01             	add    $0x1,%eax
+ b3c:	83 c0 01             	add    $0x1,%eax
+ b3f:	f6 f2                	div    %dl
+ b41:	f6 f2                	div    %dl
+ b43:	83 e8 01             	sub    $0x1,%eax
+ b46:	83 e8 01             	sub    $0x1,%eax
+ b49:	83 e8 03             	sub    $0x3,%eax
+ b4c:	83 e8 01             	sub    $0x1,%eax
+ b4f:	83 e8 01             	sub    $0x1,%eax
+ b52:	83 e8 01             	sub    $0x1,%eax
+ b55:	83 e8 03             	sub    $0x3,%eax
+ b58:	83 e8 01             	sub    $0x1,%eax
+ b5b:	83 e8 01             	sub    $0x1,%eax
+ b5e:	83 e8 02             	sub    $0x2,%eax
+ b61:	83 e8 01             	sub    $0x1,%eax
+ b64:	83 e8 01             	sub    $0x1,%eax
+ b67:	83 e8 01             	sub    $0x1,%eax
+ b6a:	83 e8 01             	sub    $0x1,%eax
+ b6d:	83 e8 01             	sub    $0x1,%eax
+ b70:	6b c0 02             	imul   $0x2,%eax,%eax
+ b73:	6b c0 02             	imul   $0x2,%eax,%eax
+ b76:	6b c0 02             	imul   $0x2,%eax,%eax
+ b79:	83 c0 01             	add    $0x1,%eax
+ b7c:	83 c0 01             	add    $0x1,%eax
+ b7f:	83 c0 03             	add    $0x3,%eax
+ b82:	83 c0 01             	add    $0x1,%eax
+ b85:	83 c0 01             	add    $0x1,%eax
+ b88:	83 c0 01             	add    $0x1,%eax
+ b8b:	83 c0 03             	add    $0x3,%eax
+ b8e:	83 c0 01             	add    $0x1,%eax
+ b91:	83 c0 01             	add    $0x1,%eax
+ b94:	83 c0 02             	add    $0x2,%eax
+ b97:	83 c0 01             	add    $0x1,%eax
+ b9a:	83 c0 01             	add    $0x1,%eax
+ b9d:	83 c0 01             	add    $0x1,%eax
+ ba0:	83 c0 01             	add    $0x1,%eax
+ ba3:	83 c0 01             	add    $0x1,%eax
+ ba6:	f6 f2                	div    %dl
+ ba8:	f6 f2                	div    %dl
+ baa:	83 e8 01             	sub    $0x1,%eax
+ bad:	83 e8 01             	sub    $0x1,%eax
+ bb0:	83 e8 03             	sub    $0x3,%eax
+ bb3:	83 e8 01             	sub    $0x1,%eax
+ bb6:	83 e8 01             	sub    $0x1,%eax
+ bb9:	83 e8 01             	sub    $0x1,%eax
+ bbc:	83 e8 03             	sub    $0x3,%eax
+ bbf:	83 e8 01             	sub    $0x1,%eax
+ bc2:	83 e8 01             	sub    $0x1,%eax
+ bc5:	83 e8 02             	sub    $0x2,%eax
+ bc8:	83 e8 01             	sub    $0x1,%eax
+ bcb:	83 e8 01             	sub    $0x1,%eax
+ bce:	83 e8 01             	sub    $0x1,%eax
+ bd1:	83 e8 01             	sub    $0x1,%eax
+ bd4:	83 e8 01             	sub    $0x1,%eax
+ bd7:	6b c0 02             	imul   $0x2,%eax,%eax
+ bda:	6b c0 02             	imul   $0x2,%eax,%eax
+ bdd:	6b c0 02             	imul   $0x2,%eax,%eax
+ be0:	83 c0 01             	add    $0x1,%eax
+ be3:	83 c0 01             	add    $0x1,%eax
+ be6:	83 c0 03             	add    $0x3,%eax
+ be9:	83 c0 01             	add    $0x1,%eax
+ bec:	83 c0 01             	add    $0x1,%eax
+ bef:	83 c0 01             	add    $0x1,%eax
+ bf2:	83 c0 03             	add    $0x3,%eax
+ bf5:	83 c0 01             	add    $0x1,%eax
+ bf8:	83 c0 01             	add    $0x1,%eax
+ bfb:	83 c0 02             	add    $0x2,%eax
+ bfe:	83 c0 01             	add    $0x1,%eax
+ c01:	83 c0 01             	add    $0x1,%eax
+ c04:	83 c0 01             	add    $0x1,%eax
+ c07:	83 c0 01             	add    $0x1,%eax
+ c0a:	83 c0 01             	add    $0x1,%eax
+ c0d:	f6 f2                	div    %dl
+ c0f:	f6 f2                	div    %dl
+ c11:	83 e8 01             	sub    $0x1,%eax
+ c14:	83 e8 01             	sub    $0x1,%eax
+ c17:	83 e8 03             	sub    $0x3,%eax
+ c1a:	83 e8 01             	sub    $0x1,%eax
+ c1d:	83 e8 01             	sub    $0x1,%eax
+ c20:	83 e8 01             	sub    $0x1,%eax
+ c23:	83 e8 03             	sub    $0x3,%eax
+ c26:	83 e8 01             	sub    $0x1,%eax
+ c29:	83 e8 01             	sub    $0x1,%eax
+ c2c:	83 e8 02             	sub    $0x2,%eax
+ c2f:	83 e8 01             	sub    $0x1,%eax
+ c32:	83 e8 01             	sub    $0x1,%eax
+ c35:	83 e8 01             	sub    $0x1,%eax
+ c38:	83 e8 01             	sub    $0x1,%eax
+ c3b:	83 e8 01             	sub    $0x1,%eax
+ c3e:	89 c2                	mov    %eax,%edx
+ c40:	89 55 fc             	mov    %edx,-0x4(%rbp)
+ c43:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ c46:	5d                   	pop    %rbp
+ c47:	c3                   	retq   
+
+0000000000000c48 <main>:
+ c48:	55                   	push   %rbp
+ c49:	48 89 e5             	mov    %rsp,%rbp
+ c4c:	48 83 ec 20          	sub    $0x20,%rsp
+ c50:	48 c7 45 e8 00 00 00 	movq   $0x0,-0x18(%rbp)
+ c57:	00 
+ c58:	c7 45 e0 00 00 00 00 	movl   $0x0,-0x20(%rbp)
+ c5f:	ba 80 03 00 00       	mov    $0x380,%edx
+ c64:	be 00 10 00 00       	mov    $0x1000,%esi
+ c69:	bf d2 04 00 00       	mov    $0x4d2,%edi
+ c6e:	e8 00 00 00 00       	callq  c73 <main+0x2b>
+ c73:	89 45 e4             	mov    %eax,-0x1c(%rbp)
+ c76:	8b 45 e4             	mov    -0x1c(%rbp),%eax
+ c79:	ba 00 00 00 00       	mov    $0x0,%edx
+ c7e:	be 00 00 00 00       	mov    $0x0,%esi
+ c83:	89 c7                	mov    %eax,%edi
+ c85:	e8 00 00 00 00       	callq  c8a <main+0x42>
+ c8a:	48 89 45 f0          	mov    %rax,-0x10(%rbp)
+ c8e:	8b 45 e0             	mov    -0x20(%rbp),%eax
+ c91:	8d 50 01             	lea    0x1(%rax),%edx
+ c94:	89 55 e0             	mov    %edx,-0x20(%rbp)
+ c97:	48 63 d0             	movslq %eax,%rdx
+ c9a:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+ c9e:	48 01 c2             	add    %rax,%rdx
+ ca1:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ ca5:	0f b6 00             	movzbl (%rax),%eax
+ ca8:	88 02                	mov    %al,(%rdx)
+ caa:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ cae:	0f b6 00             	movzbl (%rax),%eax
+ cb1:	0f b6 c0             	movzbl %al,%eax
+ cb4:	89 c6                	mov    %eax,%esi
+ cb6:	bf 00 00 00 00       	mov    $0x0,%edi
+ cbb:	b8 00 00 00 00       	mov    $0x0,%eax
+ cc0:	e8 00 00 00 00       	callq  cc5 <main+0x7d>
+ cc5:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ cc9:	48 8d 50 01          	lea    0x1(%rax),%rdx
+ ccd:	48 89 55 e8          	mov    %rdx,-0x18(%rbp)
+ cd1:	0f b6 00             	movzbl (%rax),%eax
+ cd4:	3c c3                	cmp    $0xc3,%al
+ cd6:	75 b6                	jne    c8e <main+0x46>
+ cd8:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ cdc:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+ ce0:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ ce4:	48 89 c6             	mov    %rax,%rsi
+ ce7:	bf 00 00 00 00       	mov    $0x0,%edi
+ cec:	b8 00 00 00 00       	mov    $0x0,%eax
+ cf1:	e8 00 00 00 00       	callq  cf6 <main+0xae>
+ cf6:	be 00 00 00 00       	mov    $0x0,%esi
+ cfb:	bf 00 00 00 00       	mov    $0x0,%edi
+ d00:	b8 00 00 00 00       	mov    $0x0,%eax
+ d05:	e8 00 00 00 00       	callq  d0a <main+0xc2>
+ d0a:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+ d0e:	0f b6 00             	movzbl (%rax),%eax
+ d11:	0f b6 c0             	movzbl %al,%eax
+ d14:	89 c6                	mov    %eax,%esi
+ d16:	bf 00 00 00 00       	mov    $0x0,%edi
+ d1b:	b8 00 00 00 00       	mov    $0x0,%eax
+ d20:	e8 00 00 00 00       	callq  d25 <main+0xdd>
+ d25:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+ d29:	48 89 c7             	mov    %rax,%rdi
+ d2c:	e8 00 00 00 00       	callq  d31 <main+0xe9>
+ d31:	bf 00 00 00 00       	mov    $0x0,%edi
+ d36:	e8 00 00 00 00       	callq  d3b <main+0xf3>
+ d3b:	b8 00 00 00 00       	mov    $0x0,%eax
+ d40:	c9                   	leaveq 
+ d41:	c3                   	retq   
