@@ -30,11 +30,10 @@ int main(void)
 	sharedmem_init();
 	drecompile_init();
 
-//	do {
-//		printf("%x ", Operation[i]);
-//	} while(Operation[i++] != 0xC3);
-
 	func = (int (*)(int a))drecompile(Operation);
+	for (int i = 0; i < 1000000; i++)
+		func(1);
+//	printf("m = %d\n", func(1));
 
 	drecompile_exit();
 	sharedmem_exit();
@@ -42,59 +41,97 @@ int main(void)
 	clock_gettime(CLOCK_MONOTONIC, &end);
 	time += (end.tv_sec - begin.tv_sec);
 	time += (double)(end.tv_nsec - begin.tv_nsec)/1000000000;
-	printf("total execution time : %lf sec\n", time);
+	printf("total execution time : %lf sec", time);
 	return 0;
 }
 
-#ifndef dynamic
-// inside here is dynamic code
-#endif
-
-
-void sharedmem_init()
-{
+void sharedmem_init() {
 	int seg_id;
 	seg_id = shmget(1234, PAGE_SIZE, 0);
 	Operation = (uint8_t*)shmat(seg_id, NULL, 0);
+}
 
+void sharedmem_exit() { shmdt(Operation); }
+
+void drecompile_init() {
+	compiled_code = mmap(0, PAGE_SIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, 0, 0);
+	if (compiled_code == NULL)
+		exit(1);
 	return;
 }
 
-void sharedmem_exit()
-{
-//	shmdt(Operation);
-	return;
-}
-
-void drecompile_init(uint8_t *func)
-{
-	int fd;
-	int pagesize;
-
-//	fd = open("test2", O_RDWR);
-	pagesize = getpagesize();
-//	compiled_code = mmap(0, pagesize, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-//	if (compiled_code == NULL)
-//		exit(1);
-	return;
-}
-
-void drecompile_exit()
-{
-	int pagesize = getpagesize();
-	
-//	msync(compiled_code, pagesize, MS_ASYNC);
-//	munmap(compiled_code, pagesize);
+void drecompile_exit() {
+	msync(compiled_code, PAGE_SIZE, MS_ASYNC);
+	munmap(compiled_code, PAGE_SIZE);
 }
 
 void* drecompile(uint8_t* func)
 {
-//	mprotect(func, getpagesize(), PROT_EXEC);
-	//((int(*)(int))func)(1);
-	
+	int i = 0;
+	int k = 0;
+	int dl_val;
+	int div_count = 0;
 
-//	func(1);
-//	compiled_code[0] &= ~0x20;
+	do {
+		compiled_code[i] = func[k];
+#ifdef dynamic
+		if (func[k] == 0xb2) {
+			dl_val = func[k+1];	
+		}
+		if (func[k] == 0x83) { // add, sub
+			if (func[k+1] == 0xc0) { // add		
+				i++; k++;
+				compiled_code[i++] = func[k++];
+				compiled_code[i] = func[k];
+				while (func[k+1] == 0x83 && func[k+2] == 0xc0) { // next also add {
+					k+=3;
+					compiled_code[i] += func[k];
+				}
+			}
+			else if (func[k+1] == 0xe8) {// sub
+				k++; i++;
+				compiled_code[i++] = func[k++];
+				compiled_code[i] = func[k];
+				while (func[k+1] == 0x83 && func[k+2] == 0xe8) { // next also sub 
+					k+=3;
+					compiled_code[i] += func[k];
+				}
+			}
+		}
+		else if (func[k] == 0x6b) { // mul
+			k++; i++;
+			compiled_code[i++] = func[k++];
+			compiled_code[i] = func[k];
+			while (func[k+1] == 0x6b) { // next also mul 
+				k+=3;
+				compiled_code[i] *= func[k];
+			}
+		}
+		else if (func[k] == 0xf6) { // div
+			while (func[k+2] == 0xf6) { // next also div
+				k+=2;
+				div_count++;
+			}
+			if (div_count == 0) // there's only one div
+				compiled_code[++i] = func[++k];
+			else {
+				compiled_code[i++] = 0xb2;
+				compiled_code[i] = dl_val; // mov dl_val %dl
+				while (div_count--) {
+					compiled_code[i] *= dl_val;	  
+				}
+				compiled_code[++i] = func[k];
+				compiled_code[++i] = func[++k];
+			}
+		}
+#endif
+		i++;
+	} while(func[k++] != 0xC3);
 
+//	printf("i = %d, k = %d\n", i, k);	
+
+	mprotect(compiled_code, PAGE_SIZE, PROT_EXEC);
+
+	return (int(*)(int))compiled_code;
 }
 
